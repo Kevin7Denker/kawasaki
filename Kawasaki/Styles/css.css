@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --background-color: black;
+  --primary-font-color: white;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: var(--background-color);
+}
+
+nav {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50%;
+  height: 10svh;
+  justify-content: space-around;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-font-color);
+}
+
+.icon img {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+.intro {
+  height: 90svh;
+  background-image: url("../Assets/verde.jpg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.frase-moto {
+  display: flex;
+  margin-bottom: 15%;
+  font-size: 3.5rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: white;
+  animation: aparecimento 3s ease-in-out;
+}
+
+.frase-moto p {
+  font-size: 3rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: rgb(10, 184, 10);
+  animation: aparecimento 3s ease-in-out;
+}
+
+.information {
+  width: 100svh;
+  height: 100svh;
+}
+
+@keyframes aparecimento {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
